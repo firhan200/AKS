@@ -2,7 +2,7 @@
 Aplikasi Kasir Sederhana
 ###################
 
-Aplikasi Kasir Sederhana(AKS) adalah sistem transaksi kasir berbasis web yang di bangun di atas Codeigniter v3, Bootstrap v3.5, JQuery dan menggunakan basis data MySQL. Terdapat 2 Level pada aplikasi ini yaitu level administrator dan level petugas/kasir.
+| Aplikasi Kasir Sederhana(AKS) adalah sistem transaksi kasir berbasis web yang di bangun di atas Codeigniter v3, Bootstrap v3.5, JQuery dan menggunakan basis data MySQL. Terdapat 2 Level pada aplikasi ini yaitu level administrator dan level petugas/kasir.
 | Fungsi dari masing-masing level antara lain:
 | User	Fungsi
 | Kasir	Melayani transaksi pembelian barang
@@ -17,7 +17,6 @@ Aplikasi Kasir Sederhana(AKS) adalah sistem transaksi kasir berbasis web yang di
 Struktur Basis Data
 *******************
 
-| Struktur Basis Data
 | Petugas (idpetugas, nama, email, password, kategori)
 | Kategori : admin | kasir
 | Email digunakan sebagai username untuk login.
