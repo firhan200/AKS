@@ -20,7 +20,7 @@ class Crud extends CI_Model{
 			$this->db->order_by($ordField, $ordType);
 		}
 		$query = $this->db->get($table);
-		return $query->result();
+		return $query;
 	}
 
 	function readPaging($table, $cond, $ordField, $ordType, $limit, $start){
@@ -31,7 +31,7 @@ class Crud extends CI_Model{
 			$this->db->order_by($ordField, $ordType);
 		}
 		$query = $this->db->get($table, $limit, $start);
-		return $query->result();
+		return $query;
 	}
 
 	function totalData($table){

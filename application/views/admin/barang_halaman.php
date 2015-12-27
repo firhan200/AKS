@@ -55,38 +55,43 @@
 
 		<!-- tambah barang modal -->
 		<div id="addModal" class="modal fade" role="modal">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal">&times;</button>
-					<h3 class="modal-title"><span class="glyphicon glyphicon-plus"></span> Tambah Barang</h3>
-				</div>
-				<div class="modal-body">
-					<form action="#" method="post" enctype="multipart/form-data">
-						<div class="form-group">
-							<label>Nama</label>
-							<input type="text" name="nama" class="form-control" maxlength="100" required>
-						</div>
-						<div class="form-group">
-							<label>Kategori</label>
-							<select name="kateogir" class="form-control">
-								<option value="">--pilih kategori--</option>
-							</select>
-						</div>
-						<div class="form-group">
-							<label>Harga</label>
-							<input type="number" name="harga" class="form-control" maxlength="30">
-						</div>
-						<div class="form-group">
-							<label>Stok</label>
-							<input type="number" name="stok" class="form-control" maxlength="10">
-						</div>
-						<div class="form-group">
-							<label>Deskripsi</label>
-							<textarea name="deskripsi" class="form-control" maxlength="1000" rows="6"></textarea>
-						</div>
-						<button type="submit" class="btn btn-primary" style="width:100%;">Tambah</button>
-					</form>
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h3 class="modal-title"><span class="glyphicon glyphicon-plus"></span> Tambah Barang</h3>
+					</div>
+					<div class="modal-body">
+						<form action="#" method="post" enctype="multipart/form-data">
+							<div class="form-group">
+								<label>Nama</label>
+								<input type="text" name="nama" class="form-control" maxlength="100" required>
+							</div>
+							<div class="form-group">
+								<label>Kategori</label>
+								<select name="kateogir" class="form-control">
+									<option value="">--pilih kategori--</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label>Harga</label>
+								<input type="number" name="harga" class="form-control" maxlength="30">
+							</div>
+							<div class="form-group">
+								<label>Stok</label>
+								<input type="number" name="stok" class="form-control" maxlength="10">
+							</div>
+							<div class="form-group">
+								<label>Deskripsi</label>
+								<textarea name="deskripsi" class="form-control" maxlength="1000" rows="6"></textarea>
+							</div>
+							<div class="form-group">
+								<label>Foto</label>
+								<input type="file" class="form-control">
+							</div>
+							<button type="submit" class="btn btn-primary" style="width:100%;">Tambah</button>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
