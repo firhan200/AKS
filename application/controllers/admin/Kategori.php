@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Kategori extends CI_Controller{
+class Kategori extends MY_Controller{
 	public function __construct(){
 		parent::__construct();
 		$this->load->helper('url');
@@ -9,6 +9,7 @@ class Kategori extends CI_Controller{
 	}
 
 	public function index(){
+		$this->sessionOut(); 
 		$data['tab2'] = true; 
 		$data['query'] = $this->Crud->read('kategori', null, 'idkategori', 'DESC');
 		$this->load->view('admin/kategori_halaman', $data);

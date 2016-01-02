@@ -12,6 +12,16 @@ class Crud extends CI_Model{
 		return $query;
 	}
 
+	function readBarang($table, $cond, $ordField, $ordType){
+		$this->db->select('kategori.nama AS namak, barang.nama AS namab, petugas.nama AS namap, barang.idkategori, barang.harga, barang.stock, barang.last_update, barang.idbarang');
+		$this->db->from($table);
+		$this->db->join('petugas', $table.'.idpetugas = petugas.idpetugas');
+		$this->db->join('kategori', $table.'.idkategori = kategori.idkategori');
+		$query = $this->db->get();
+
+		return $query;
+	}
+
 	function read($table, $cond, $ordField, $ordType){
 		if($cond!=null){
 			$this->db->where($cond);
